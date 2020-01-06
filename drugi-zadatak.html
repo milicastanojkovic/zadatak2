@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drugi domaci</title>
+</head>
+<body>  
+<div id="prvaTri" >
+    <div id="prvi" >
+        <p>Ovo je prvi element prvog</p>
+        <p>Ovo je drugi element prvog</p>
+        <p>Ovo je treci element prvog</p>
+        <p>Ovo je cetvrti element prvog</p>
+        <p>Ovo je peti element prvog</p>
+
+    </div>
+    <div id="drugi">
+        <p >Ovo je prvi element drugog</p>
+        <p >Ovo je drugi element drugog</p>
+        <p >Ovo je treci element drugog</p>
+        <p >Ovo je cetvrti element drugog</p>
+        <p >Ovo je peti element drugog</p>
+    </div>
+    <div id="treci">
+        <p>Ovo je prvi element treceg</p>
+        <p>Ovo je drugi element treceg</p>
+        <p>Ovo je treci element treceg</p>
+        <p>Ovo je cetvrti element treceg</p>
+        <p>Ovo je peti element treceg</p>
+    </div>
+</div>
+<div id="drugaTri">
+    <div id="cetvrti">
+        <p>Ovo je prvi element cetvrtog</p>
+        <p>Ovo je drugi element cetvrtog</p>
+        <p>Ovo je treci element cetvrtog</p>
+        <p>Ovo je cetvrti element cetvrtog</p>
+        <p>Ovo je peti element cetvrtog</p>
+    </div>
+    <div id="peti">
+        <p>Ovo je prvi element petog</p>
+        <p>Ovo je drugi element petog</p>
+        <p>Ovo je treci element petog</p>
+        <p>Ovo je cetvrti element petog</p>
+        <p>Ovo je peti element petog</p>
+    </div>
+    <div id="sesti">
+        <p>Ovo je prvi element sestog</p>
+        <p>Ovo je drugi element sestog</p>
+        <p>Ovo je treci element sestog</p>
+        <p>Ovo je cetvrti element sestog</p>
+        <p>Ovo je peti element sestog</p>
+    </div>
+</div>
+</body>
+<style>
+    #prvaTri{display: flex; }
+    #drugaTri{display: grid; grid-auto-flow: column; grid-template-columns: 20% auto 30%;}
+
+    #prvi{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+        justify-content: flex-start;
+}
+    #drugi{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#treci{
+    flex:1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cetvrti{
+    display: grid;
+    padding: 10px;
+    justify-content: start;
+}
+
+#peti{
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sesti{
+    display: grid;
+    padding: 10px;
+    justify-content: end;
+}
+
+
+p{
+    padding: 10px;
+}
+html,body{
+    height: 100%;
+}
+
+@media (max-width: 1150px) {
+  #prvaTri{
+      flex-flow: column;
+  }
+  #drugaTri{
+      grid-auto-flow: row;
+  }
+}
+
+</style>
+</html>
